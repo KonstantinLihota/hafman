@@ -94,7 +94,7 @@ int main() {
 	n->traversal_code("");
 
 	l = s_p.length();
-	// генерируем DOT-описание полученного дерева для отрисовки
+
 	cout << "{\n" << n->to_str() << "}\n";
 	for (int i = 0; i < s_p.length(); i++) {
 		s_code[i] = cod[int(s_p[i])];
@@ -105,5 +105,5 @@ int main() {
 	for (int i = 0; i < l; i++) {
 		n->traversal_decode(s_code[i]);
 	}
-	// Если вывод программы скопировать и вставить в адресную строку браузера, то увидим картинку. 
+
 }
